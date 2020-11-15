@@ -33,7 +33,9 @@ class Travel extends BaseController {
             'cell_start' => '<td style="border: 2px solid #dddddd;">',
             'row_alt_start' => '<tr style="background-color:grey">',
         ];
-        $fields = [
+       
+
+ $fields = [
             'title' => 'Travel Destinations',
             'heading' => 'Travel Destinations',
             'footer' => 'Copyright Xavier (Leyuan Fu)'
@@ -75,7 +77,9 @@ class Travel extends BaseController {
             'footer' => '(Leyuan Fu)'
         ];   
                 // and have it render the template with those 
-                        $table->setTemplate($template);
+                        
+
+$table->setTemplate($template);
                         return $parser->setData($fields)
                         ->render('templates\top') .
                 $table->generate() .
